@@ -5,7 +5,7 @@ if [ “$#” -ne 1 ]; then
 fi
 sudo apt-get install linux-firmware;
 sudo apt-get install dphys-swapfile;
-sudo apt-get install libraspberrypi-bin;
+sudo apt-get install libraspberrypi-bin libraspberrypi-dev;
 sudo ln -s /usr /opt/vc
 sudo apt-get install wireless-tools;
 sudo echo ‘allow-hotplug wlan0’ >> /etc/network/interfaces;
