@@ -3,11 +3,11 @@ if [ "$#" -ne 1 ]; then
   echo "usage: $0 number";
   exit 1;
 fi
-sudo apt-get install linux-firmware;
-sudo apt-get install dphys-swapfile;
-sudo apt-get install libraspberrypi-bin libraspberrypi-dev;
+sudo apt-get -y install linux-firmware;
+sudo apt-get -y install dphys-swapfile;
+sudo apt-get -y install libraspberrypi-bin libraspberrypi-dev;
 sudo ln -s /usr /opt/vc
-sudo apt-get install wireless-tools;
+sudo apt-get -y install wireless-tools;
 sudo sh -c "echo 'allow-hotplug wlan0' >> /etc/network/interfaces";
 sudo sh -c "echo 'auto wlan0' >> /etc/network/interfaces";
 sudo sh -c "echo 'iface wlan0 inet static' >> /etc/network/interfaces";
