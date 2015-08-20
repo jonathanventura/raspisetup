@@ -7,7 +7,7 @@ sudo dpkg -i --force-overwrite libegl1-mesa-dev_10.1.3-0ubuntu0.4_armhf.deb
 sudo apt-get -y download libgles2-mesa-dev
 sudo dpkg -i --force-overwrite libgles2-mesa-dev_10.1.3-0ubuntu0.4_armhf.deb
 sudo apt-get install -f
-sudo apt-get -y install g++ ros-indigo-ros-base ros-indigo-ros-control ros-indigo-ros-controllers ros-indigo-navigation ros-indigo-teleop-twist-keyboard ros-indigo-vision-opencv ros-indigo-ar-track-alvar ros-indigo-camera-calibration ros-indigo-rosbag ros-indigo-serial;
+sudo apt-get -y install g++ ros-indigo-ros-base ros-indigo-ros-control ros-indigo-ros-controllers ros-indigo-navigation ros-indigo-teleop-twist-keyboard ros-indigo-vision-opencv ros-indigo-ar-track-alvar ros-indigo-camera-calibration ros-indigo-rosbag ros-indigo-serial ros-indigo-compressed-image-transport ros-indigo-camera-info-manager;
 sudo apt-get -y install python-rosdep;
 sudo rosdep init;
 rosdep update;
