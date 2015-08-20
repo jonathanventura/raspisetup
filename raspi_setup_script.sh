@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ "$#" -ne 1 ]; then
-  echo "usage: $0 number" > &2;
+  echo "usage: $0 number";
   exit 1;
 fi
 sudo apt-get install linux-firmware;
